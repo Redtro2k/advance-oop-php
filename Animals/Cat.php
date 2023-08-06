@@ -1,12 +1,13 @@
 <?php
 namespace Animals;
 
-class Animal implements AnimalInterface{
+class Cat implements AnimalInterface{
     private $species;
     public function __construct($species){
         $this->species = $species;
     }
-    public function makeSound(){
-        return "The {$this->species} make a sound!";
+    public function makeSound()
+    {
+        return "The {$this->species} meows!";
     }
 }

@@ -2,11 +2,15 @@
 require_once 'vendor/autoload.php';
 
 use Entities\Person;
-use Animals\Animal;
+use Animals\{Dog, Cat};
 
-$person = new Person('john');
-$animal = new Animal('Dog');
-
+$person = new Person('John');
+$dog = new Dog('Dog');
+$cat = new Cat('Cat');
 echo $person->greet();
-echo $animal->makeSound();
+$animals = [$dog, $cat];
+
+foreach ($animals as $animal) {
+    echo $animal->makeSound() . PHP_EOL;
+}
 
