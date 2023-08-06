@@ -1,0 +1,17 @@
+{
+    "name": "darwin/example",
+    "autoload": {
+        "psr-4": {
+            "Darwin\\Example\\": "src/",
+            "Entities\\": "Entities/",
+            "Animals\\": "Animals/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Blu369",
+            "email": "llacuna.darwin24@gmail.com"
+        }
+    ],
+    "require": {}
+}
