@@ -1,7 +1,7 @@
 <?php
 namespace Entities;
 
-class Person{
+class Person implements PersonInterface{
     private $name;
     public function __construct($name){
         $this->name = $name;

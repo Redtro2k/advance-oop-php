@@ -1,7 +1,7 @@
 <?php
 namespace Animals;
 
-class Animal{
+class Animal implements AnimalInterface{
     private $species;
     public function __construct($species){
         $this->species = $species;
